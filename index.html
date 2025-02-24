@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>Font Delivery Example</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Zilla Slab', serif;
+            color: #333;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #d81563;
+        }
+        p {
+            font-size: 1.2em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+    <center><h1>Serving Fonts </h1></center>
+    <center><h1>Lab 3</h1></center>
+    <p>
+        Hello Everyone, I'm Dhanashree Alwal, and I have completed my Lab-3 assignment on serving fonts. For this project, I used two different fonts: one for the headings and a separate one for the paragraph text to make the content visually distinct. Additionally, I included a footer at the end of the page that dynamically shows the last modified date. This allowed me to apply custom fonts and ensure proper formatting on the page. I’ve tested it, and everything looks great!
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+
+</body>
+</html>
